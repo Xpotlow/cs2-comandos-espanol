@@ -2,22 +2,47 @@
 Descripcion!!! Hola, Este es un proyecto en solitario que se especifica para gente nueva que no sabe sobre comandos de consola de cs2 u para creadores de mapas de cs2 nuevos, aqui esta una lista de 500+ comandos con sus utilidades al costado para su uso (EN ESPAÑOL), Gracias por visitar mi pagina web :P
 
 
-**La lista más completa de comandos para CS2 en español**
+# 📋 Comandos para Counter-Strike 2 (CS2)
 
-Bienvenido a la guía definitiva de comandos para Counter-Strike 2. Este repositorio está pensado especialmente para **jugadores nuevos**, **practicantes**, **entrenadores** y **creadores de mapas** que quieren dominar la consola del juego.
+**La guía más completa de comandos para CS2 en español**
 
-Aquí encontrarás **más de 500 comandos** organizados, explicados y listos para copiar y pegar.
+![GitHub stars](https://img.shields.io/github/stars/Xpotlow/cs2-comandos-espanol) 
+
+![GitHub last commit](https://img.shields.io/github/last-commit/Xpotlow/cs2-comandos-espanol)
+
+Bienvenido a la **lista definitiva** de comandos para Counter-Strike 2. Este proyecto está creado para ayudar a jugadores nuevos, practicantes serios y creadores de mapas.
+
+Aquí encontrarás **más de 500 comandos** organizados, explicados y listos para usar.
+
+---
+
+## ✨ ¿Qué vas a encontrar?
+
+- Configuraciones avanzadas de servidor y práctica
+
+- Comandos para mejorar **FPS** y **rendimiento**
+
+- Optimización de **sonido**, **red** y **conexión**
+
+- Personalización completa de **mira (crosshair)**, HUD y viewmodel
+
+- Skins de cuchillos y comandos de granadas
+
+- Binds útiles y automatización
+
+- Comandos para **creadores de mapas** (Nav Mesh, entidades, etc.)
+
+- Guía para crear tu propio `autoexec.cfg`
 
 ---
 
-## ¿Para qué sirve este proyecto?
+## 🚀 Configuración Rápida de Práctica
 
-- Mejorar tu **rendimiento** (FPS y conexión)
-- Configurar **servidores de práctica** perfectos
-- Dominar **granadas** y **trayectorias**
-- Personalizar tu **mira**, **HUD**, **sonido** y **viewmodel**
-- Usar **cheats** de forma segura en entrenamiento
-- Crear **binds útiles** y configuraciones avanzadas
-- Ayudar a **creadores de mapas** con comandos de nav mesh y entidades
+Copia y pega este bloque en consola para tener el setup ideal:
 
----
+```console
+
+sv_cheats 1; mp_freezetime 0; mp_roundtime_defuse 60; mp_buytime 99999; mp_buy_anywhere 1; sv_infinite_ammo 1; bot_kick; mp_restartgame 1; sv_grenade_trajectory 1```
+
+
+¡Gracias por visitar mi Web!
