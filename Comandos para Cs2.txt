@@ -1,0 +1,575 @@
+=============================================================================
+|| PARTE 1 - EXPANSIÓN DE COMANDOS AVANZADOS (CS2)                         ||
+|| Configuración Avanzada de Servidor y Reglas de Partida (mp_) ||
+mp_c4timer 40                     (Establece el tiempo en segundos antes de que explote el C4)
+mp_friendlyfire 1                 (Activa el fuego amigo, tus balas dañan a tu equipo)
+mp_teammates_are_enemies 1        (Todos son enemigos, ideal para modo Deathmatch libre)
+mp_tkpunish 0                     (Desactiva el castigo automático por matar a compañeros de equipo)
+mp_autoteambalance 0              (Desactiva el balance automático de jugadores entre equipos)
+mp_limitteams 0                   (Permite que haya desnivel de cantidad de jugadores entre T y CT)
+mp_halftime 1                     (Activa el cambio de lado a la mitad de la partida)
+mp_halftime_duration 15           (Duración en segundos del descanso de mitad de partida)
+mp_match_can_clinch 1             (Termina la partida prematuramente si un equipo alcanza la mayoría matemática)
+mp_overtime_enable 1              (Activa el tiempo extra u Overtime si hay empate)
+mp_overtime_maxrounds 6           (Cantidad de rondas totales que se juegan en el Overtime)
+mp_damage_headshot_only 1         (Solo cuentan los tiros a la cabeza, ideal para servidores de práctica de aim)
+mp_respawn_immunitytime 0         (Quita el tiempo de invencibilidad y el aura al reaparecer)
+mp_ignore_round_win_conditions 1  (Las rondas nunca terminan por límite de tiempo, explosión de bomba o muertes)
+mp_buy_during_immunity 0          (Evita que los jugadores compren armas mientras son invulnerables)
+mp_competitive_maxrounds 24       (Establece el número máximo de rondas en modo competitivo - MR12)
+mp_defuser_allocation 0           (Controla quién recibe kits de desactivación gratis al inicio: 0=Nadie, 1=Random, 2=Todos)
+mp_display_kill_assists 1         (Muestra las asistencias en el feed de muertes de la esquina superior derecha)
+mp_forcecamera 1                  (Restringe la cámara de espectador al morir solo a compañeros de tu equipo)
+mp_radar_showall 0                (Si se pone en 1, muestra a todos los jugadores de ambos equipos en el radar permanentemente)
+mp_solid_teammates 1              (Las colisiones con compañeros están activadas, permite hacer boost/subirse encima)
+mp_weapons_allow_map_placed 1     (Permite recoger armas que ya vienen colocadas por defecto en el mapa)
+mp_weapons_glow_on_ground 1       (Las armas tiradas en el suelo tienen un pequeño brillo para verlas mejor)
+sv_party_mode 1                   (Activa el modo fiesta: el C4 tira confeti al explotar y hay globos)
+sv_password "tuclave"             (Le pone contraseña a tu servidor local para que no entren extraños)
+sv_lan 1                          (Pone el servidor en modo LAN estricto, sin conexión hacia afuera)
+sv_alltalk 1                      (Ambos equipos pueden escucharse por el chat de voz en todo momento)
+sv_deadtalk 1                     (Los jugadores muertos pueden hablar con los jugadores vivos)
+
+|| Control Específico y Comportamiento de Bots (bot_) ||
+bot_chatter "off"                 (Apaga completamente los mensajes de radio y voces de los bots)
+bot_defer_to_human_goals 0        (Obliga a los bots a hacer los objetivos como plantar o defusar en lugar de esperar al jugador)
+bot_defer_to_human_items 0        (Obliga a los bots a recoger el C4 o armas del suelo)
+bot_allow_rogues 0                (Evita que los bots desobedezcan las órdenes de radio aleatoriamente)
+bot_allow_grenades 0              (Prohíbe a todos los bots comprar o usar cualquier tipo de granada)
+bot_allow_pistols 0               (Prohíbe a todos los bots usar pistolas)
+bot_allow_rifles 0                (Prohíbe a todos los bots usar rifles de asalto como AK47 o M4)
+bot_allow_snipers 0               (Prohíbe a todos los bots usar francotiradores como el AWP o Scout)
+bot_allow_shotguns 0              (Prohíbe a todos los bots usar escopetas)
+bot_allow_machine_guns 0          (Prohíbe a todos los bots usar ametralladoras pesadas como la Negev)
+bot_allow_sub_machine_guns 0      (Prohíbe a todos los bots usar subfusiles como P90 o MAC-10)
+bot_ignore_players 1              (Los bots ignoran completamente a los jugadores humanos, no les disparan)
+bot_join_after_player 1           (Los bots esperan a que un jugador humano entre al servidor antes de unirse)
+bot_all_weapons 1                 (Permite a los bots usar el arsenal completo disponible)
+custom_bot_difficulty 5           (Nivel de dificultad customizado para bots, sobrescribe bot_difficulty)
+bot_knives_only 1                 (Obliga a todos los bots a usar única y exclusivamente el cuchillo)
+
+|| Interfaz, Privacidad, Radar y Chat Avanzado (cl_) ||
+cl_color 0                        (Color de tu perfil en el radar y lobby: 0=Amarillo, 1=Morado, 2=Verde, 3=Azul, 4=Naranja)
+cl_teammate_colors_show 1         (Muestra colores asignados a tu equipo en el radar en vez de solo letras)
+cl_sanitize_player_names 1        (Modo Streamer: Oculta los nombres reales de los jugadores y les pone nombres por defecto)
+cl_sanitize_muted_players 1       (Oculta el nombre y avatar de cualquier jugador que hayas silenciado)
+cl_hide_avatar_images 1           (Oculta todos los avatares de Steam de los jugadores, reemplazándolos por siluetas)
+cl_mute_enemy_team 1              (Silencia el texto y voz de todo el equipo enemigo automáticamente al entrar a partida)
+cl_mute_all_but_friends_and_party 1 (Silencia a absolutamente todos excepto a tus amigos de Steam y grupo de lobby)
+cl_chatfilters 63                 (Maneja los filtros del chat, 63 activa el filtro de palabras ofensivas de Steam)
+cl_showloadout 1                  (Muestra permanentemente tu inventario y equipamiento en la esquina inferior derecha)
+cl_use_opensourcer_fonts 1        (Fuerza el uso de fuentes de texto de código abierto en la interfaz)
+cl_teamcounter_playercount_instead_of_avatars 1 (Muestra números de jugadores vivos arriba en lugar de las fotos de sus avatares)
+cl_obs_interp_enable 1            (Suaviza la transición de cámara cuando eres espectador y cambias de jugador a jugador)
+cl_radial_radio_tab_0_text_1 "#Chatwheel_requestplan" (Comando avanzado para modificar las opciones de la rueda de radio)
+
+|| Física del Jugador, Movimiento y Balística (Requiere sv_cheats 1) ||
+weapon_accuracy_nospread 1        (Desactiva la dispersión aleatoria, las balas van exactamente al centro de la mira)
+weapon_recoil_scale 0             (Desactiva completamente el retroceso visual y físico de todas las armas)
+weapon_debug_spread_show 1        (Muestra un cuadro amarillo dinámico que representa la dispersión exacta del arma actual)
+sv_noclipaccelerate 5             (Velocidad a la que aceleras cuando estás usando el modo fantasma/noclip)
+sv_noclipspeed 5                  (Velocidad máxima de vuelo cuando estás en modo noclip)
+sv_staminamax 0                   (Elimina la penalización máxima de estamina/cansancio del personaje)
+sv_staminajumpcost 0              (Elimina la penalización de velocidad al saltar, permitiendo encadenar saltos perfectos)
+sv_staminalandcost 0              (Elimina la penalización de velocidad al caer al suelo)
+sv_staminarecoveryrate 0          (Tasa a la que recuperas la estamina. 0 significa recuperación instantánea)
+sv_jump_spam_penalty_time 0.015   (Penalización de tiempo mínima por spamear el botón de salto)
+sv_falldamage_scale 0             (Multiplicador de daño por caída. En 0, saltar desde edificios no te hace daño)
+
+|| Audio Avanzado, Microfono y Mezcla (snd_ y voice_) ||
+voice_loopback 1                  (Te escuchas a ti mismo al hablar, útil para probar la calidad de tu micrófono en el juego)
+voice_always_sample_mic 1         (Mantiene el micrófono caliente y activo en segundo plano para no cortar la primera palabra al presionar la tecla)
+snd_mvp_volume 0                  (Volumen de los himnos/música de jugador más valioso al final de la ronda. 0 lo desactiva)
+snd_mixahead 0.025                (Buffer de audio del motor. Valores más bajos reducen el retraso del sonido, 0.025 es muy rápido)
+voice_threshold 4000              (Umbral de volumen necesario para que tu micrófono se active en modo detección de voz)
+snd_steamaudio_enable_perspective_correction 1 (Mejora cómo se procesa el audio 3D respecto a tu cámara para pasos más precisos)
+
+|| Demos, Espectador y Grabación Avanzada ||
+demo_record "nombre_demo"         (Empieza a grabar la partida actual desde tu perspectiva y la guarda en la carpeta del juego)
+demo_stop                         (Detiene la grabación de la demo actual)
+demo_pause                        (Pausa la reproducción de la demo que estás viendo)
+demo_resume                       (Reanuda la reproducción de la demo)
+demo_timescale 2                  (Acelera la demo al doble de velocidad. Útil para saltar rondas aburridas)
+demo_timescale 0.5                (Pone la demo en cámara lenta a la mitad de velocidad para analizar jugadas)
+demo_togglepause                  (Comando ideal para bindear, alterna entre pausar y despausar la demo con un solo botón)
+spec_show_xray 1                  (Activa el modo Rayos X por defecto cuando entras de espectador para ver a través de paredes)
+spec_hide_players 1               (Oculta a los modelos de los jugadores mientras eres espectador, útil para sacar capturas de mapas)
+tv_nochat 1                       (Desactiva el chat de los espectadores en las transmisiones de SourceTV/GOTV)
+tv_enable 1                       (Activa SourceTV en tu servidor local para grabar demos de servidor con todas las perspectivas)
+tv_delay 105                      (Retraso en segundos de la transmisión de SourceTV para evitar el stream sniping)
+
+|| Gráficos, Entorno y Diagnóstico de Consola ||
+r_show_build_info 0               (Oculta el texto blanco con la fecha y versión del juego de la esquina inferior izquierda)
+vconsole                          (Abre la consola flotante avanzada de desarrollador exclusiva del motor Source 2)
+cl_updatevisibility               (Comando de depuración: Fuerza la actualización visual si hay errores de renderizado de modelos)
+sys_info                          (Imprime en consola un bloque enorme con toda la información técnica de tu hardware y configuración de juego)
+mat_queue_mode -1                 (Gestión de hilos del procesador. -1 es automático por el sistema, generalmente lo más estable)
+log_color Console 79CF98FF        (Comando visual estético: Cambia el color del texto general en la consola de comandos)
+
+|| Controles Físicos Avanzados (Mouse y Joystick) ||
+joy_enable 0                      (Desactiva completamente el soporte para joystick/mando, liberando recursos mínimos y evitando inputs fantasma)
+option_duck_method 0              (0 = Mantener presionado para agacharse, 1 = Presionar una vez para alternar agachado)
+option_speed_method 0             (0 = Mantener presionado para caminar lento, 1 = Presionar una vez para alternar caminar)
+m_pitch 0.022                     (Sensibilidad vertical bruta del mouse. NO cambiar salvo casos muy específicos de memoria muscular antigua)
+m_yaw 0.022                       (Sensibilidad horizontal bruta del mouse. Usado a veces por jugadores con resoluciones estiradas en 4:3)
+=============================================================================
+|| PARTE 2 - INTERFAZ, MIRA, RED Y HERRAMIENTAS DE CREADORES (CS2)         ||
+=============================================================================
+
+|| Personalización Avanzada de la Mira (Crosshair) ||
+cl_crosshairalpha 255             (Transparencia de la mira. 0 es invisible, 255 es totalmente sólida)
+cl_crosshairdot 1                 (Añade un punto en el centro exacto de la mira)
+cl_crosshair_t 1                  (Quita la línea superior de la mira, dándole forma de "T")
+cl_crosshair_sniper_width 2       (Grosor de las líneas de la mira al hacer zoom con AWP o Scout)
+cl_crosshair_outlinethickness 1   (Grosor del borde negro alrededor de la mira. Requiere cl_crosshair_drawoutline 1)
+cl_crosshairusealpha 1            (Permite que el comando cl_crosshairalpha funcione)
+cl_crosshair_dynamic_maxdist_splitratio 0.35 (Cuánto se separan las líneas en miras dinámicas al moverse o disparar)
+cl_crosshair_dynamic_splitalpha_innermod 1 (Transparencia de la parte interna en miras dinámicas)
+cl_crosshair_dynamic_splitalpha_outermod 0.5 (Transparencia de la parte externa en miras dinámicas)
+cl_crosshair_dynamic_splitdist 7  (Distancia extra de separación al disparar con mira dinámica)
+cl_crosshair_friendly_warning 1   (Cambia la mira de forma/color si apuntas a un compañero de equipo)
+
+|| Personalización de Interfaz (HUD) y Menús ||
+cl_hud_color 0                    (0=Normal, 1=Blanco, 2=Azul Claro, 3=Azul, 4=Morado, 5=Rojo, 6=Naranja, 7=Amarillo, 8=Verde, 9=Aqua, 10=Rosa)
+hud_scaling 0.85                  (Escala global de toda la interfaz del usuario. Rango típico de 0.5 a 0.95)
+safezonex 0.85                    (Margen horizontal del HUD. Valores más bajos acercan los elementos al centro de la pantalla)
+safezoney 0.85                    (Margen vertical del HUD. Valores más bajos acercan los elementos al centro de la pantalla)
+cl_show_clan_in_death_notice 0    (Oculta los nombres de clan o grupos de Steam en el feed de muertes para mayor limpieza)
+cl_radar_square_with_scoreboard 1 (El radar se vuelve un cuadrado grande y muestra todo el mapa al presionar Tabulador/Ver puntuación)
+cl_hud_radar_background_alpha 0.5 (Nivel de opacidad/transparencia del fondo negro del radar)
+ui_mainmenu_bkgnd_movie_11_s1 "background01" (Permite forzar un fondo específico en el menú principal mediante la consola)
+cl_color 4                        (Fuerza tu color preferido en matchmaking si está disponible. 0=Amarillo, 1=Morado, 2=Verde, 3=Azul, 4=Naranja)
+
+|| Red, Telemetría y Compensación de Latencia (CS2 Nuevo Sistema) ||
+cl_hud_telemetry_frametime_show 2 (Muestra el tiempo de renderizado de fotogramas o "frametime" en milisegundos)
+cl_hud_telemetry_frametime_poor 100 (Umbral en ms para considerar que tienes "mal frametime" y que el texto se ponga rojo)
+cl_hud_telemetry_ping_poor 100    (Umbral en ms para considerar que tienes un ping alto y que se pinte de rojo)
+cl_hud_telemetry_net_detailed 1   (Muestra una versión mucho más técnica y detallada de la información de red en pantalla)
+rate 786432                       (Límite de ancho de banda. 786432 es el máximo para conexiones modernas. 196608 para internet muy lento)
+cl_net_buffer_ticks 0             (0 es recomendado para baja latencia. 1 o 2 añade retraso artificial pero suaviza tirones por mal internet)
+cl_predict 1                      (Predicción del cliente activada. El juego calcula tus movimientos antes de que responda el servidor)
+cl_predictweapons 1               (Predicción visual de tus disparos en el cliente para que no se sientan con retraso)
+cl_lagcompensation 1              (Activa la compensación de lag del servidor. FUNDAMENTAL que esté en 1)
+
+|| Depuración Gráfica y Herramientas de Mapeo (Requiere sv_cheats 1) ||
+r_drawsprites 0                   (Desactiva el renderizado de sprites, útil para detectar problemas de interfaz o partículas 2D)
+r_drawparticles 0                 (Desactiva partículas como el humo, fuego o explosiones. Solo sirve en cheats, no te dará ventaja en MM)
+r_drawdecals 0                    (Desactiva el renderizado de sangre y balazos en las paredes)
+showtriggers_toggle               (Muestra los volúmenes invisibles del mapa, como las zonas de compra o zonas de explosión del C4)
+r_drawclipbrushes 1               (Dibuja como alambres sólidos los muros invisibles diseñados por el creador del mapa)
+r_drawclipbrushes 2               (Pinta de color sólido los muros invisibles para ver exactamente por dónde no puedes pasar)
+vcollide_wireframe 1              (Muestra la caja de colisión física real de los objetos, que suele ser más simple que el modelo 3D)
+mat_wireframe 1                   (Muestra todos los polígonos del mapa. Devora los FPS pero es esencial para modders)
+mat_fullbright 1                  (Iluminación plana al máximo. Quita todas las sombras y zonas oscuras del mapa)
+mat_postprocess_enable 0          (Desactiva filtros de post-procesado como el desenfoque o correcciones de color del mapa)
+
+|| Manipulación de Entidades y Entorno (Requiere sv_cheats 1) ||
+sv_regeneration_force_on 1        (Regeneración de vida extremadamente rápida, útil para practicar saltos donde recibes daño por caída)
+sv_falldamage_scale 0             (Elimina por completo el daño por caída. En 1.0 es el daño normal)
+sv_showimpacts_penetration 1      (Muestra información técnica detallada de cuántos muros atravesó una bala y el daño restante)
+ent_fire !self addoutput "health 1000" (Te otorga 1000 puntos de vida temporalmente)
+ent_fire weapon_ak47 kill         (Borra todos los AK-47 que estén en el suelo o en manos de los jugadores en todo el servidor)
+ent_remove                        (Borra la entidad o modelo 3D al que le estés apuntando con la mira directamente)
+ent_create chicken                (Genera un pollo exactamente donde estás apuntando)
+prop_dynamic_create \props\cs_italy\market_watermelon01.mdl (Ejemplo para crear una sandía de Italy frente a ti)
+
+|| Modelos de Visión (Viewmodel) y Movimiento del Arma ||
+viewmodel_fov 68                  (Campo de visión solo de tus brazos y arma. Rango de 54 a 68. 68 aleja el arma al máximo)
+viewmodel_offset_x 2.5            (Posición horizontal del arma. Valores positivos la mueven más a la derecha)
+viewmodel_offset_y 2              (Posición de profundidad del arma. Valores positivos la alejan de tu cara)
+viewmodel_offset_z -2             (Posición vertical del arma. Valores negativos bajan el arma en la pantalla)
+viewmodel_presetpos 0             (Permite usar tus valores customizados. 1=Escritorio, 2=Couch/Sofá, 3=Clásico)
+cl_prefer_lefthanded 0            (En CS2 reemplaza en parte el antiguo cl_righthand. 1 hará que siempre inicies con el arma en la izquierda)
+
+|| Comandos de Práctica de Combate (sv_ y mp_ avanzados) ||
+sv_headshotcatchup 1              (En servidores de Deathmatch, beneficia el spawn de jugadores que matan solo con headshots)
+mp_death_drop_defuser 1           (Asegura que el kit de desactivación caiga al suelo cuando el CT que lo lleva muere)
+mp_death_drop_taser 1             (Asegura que el Zeus x27 se caiga al suelo al morir)
+mp_drop_knife_enable 1            (Permite presionar la tecla de soltar arma teniendo el cuchillo en la mano para tirarlo)
+mp_anyone_can_pickup_c4 1         (Permite que los Antiterroristas (CT) puedan recoger el C4 del suelo e interactuar con él)
+mp_c4_cannot_be_defused 1         (Hace que la bomba sea literalmente imposible de desactivar una vez plantada)
+mp_give_player_c4 0               (Evita que la bomba se le asigne a un jugador al inicio de la ronda T)
+=============================================================================
+|| PARTE 3 - ADMINISTRACIÓN, CREADORES DE MAPAS (NAV) Y MODOS DE JUEGO     ||
+=============================================================================
+
+|| Administración de Servidores y RCON (Control Remoto) ||
+rcon_password "tu_clave"          (Contraseña para administrar un servidor dedicado a distancia)
+rcon [comando]                    (Ejecuta un comando en el servidor remoto. Ej: rcon changelevel de_dust2)
+kick "nombre_jugador"             (Expulsa a un jugador específico de tu servidor)
+kickid [SteamID]                  (Expulsa a un jugador usando su identificador de Steam)
+banid 0 [SteamID]                 (Banea permanentemente a un jugador por su SteamID. "0" es tiempo infinito)
+banid 60 [SteamID]                (Banea a un jugador por 60 minutos mediante su SteamID)
+banip 0 [IP_del_jugador]          (Banea permanentemente una dirección IP del servidor)
+writeid                           (Guarda la lista de jugadores baneados por ID en el archivo del servidor)
+writeip                           (Guarda la lista de IP baneadas para que no se borren al reiniciar)
+removeid [SteamID]                (Desbanea a un jugador usando su SteamID)
+removeip [IP_del_jugador]         (Desbanea una dirección IP específica)
+sv_lan 0                          (Abre tu servidor para que jugadores de internet puedan conectarse)
+
+|| Carga de Mapas y Steam Workshop ||
+map de_mirage                     (Inicia un servidor local inmediatamente con el mapa especificado)
+changelevel de_inferno            (Cambia el mapa actual sin cerrar el servidor ni expulsar a los jugadores)
+host_workshop_map [ID_Mapa]       (Descarga automáticamente y carga un mapa de la Workshop de Steam por su ID)
+host_timescale 1                  (Escala de tiempo del servidor host. 1 es normal, 0.5 lento, 2.0 rápido)
+mp_match_end_restart 0            (Si se pone en 1, reinicia el mapa automáticamente cuando termina la partida)
+mp_match_end_changelevel 1        (Si se pone en 1, cambia al siguiente mapa del ciclo al terminar la partida)
+nextlevel de_nuke                 (Define cuál será el próximo mapa que se cargará cuando termine la partida)
+mapgroup mg_active                (Define el grupo de mapas que usará el servidor para las rotaciones)
+
+|| SourceTV y Transmisiones (GOTV) ||
+tv_enable 1                       (Activa el servidor SourceTV/GOTV para permitir espectadores pasivos)
+tv_delay 105                      (Retraso en segundos de la transmisión GOTV. 105s es el estándar competitivo para evitar trampas)
+tv_maxclients 10                  (Número máximo de espectadores simultáneos permitidos en tu GOTV)
+tv_autorecord 0                   (Si se pone en 1, el servidor graba automáticamente demos de todas las partidas jugadas)
+tv_name "Mi Torneo TV"            (Establece el nombre público de tu servidor de espectadores)
+tv_password "espectador123"       (Le pone una contraseña a tu GOTV, diferente a la del servidor de juego)
+tv_relaypassword "relay123"       (Contraseña para conectar servidores relay de GOTV que amplifican la transmisión)
+tv_snapshotrate 64                (Define a cuántos ticks por segundo se transmite o graba la demo)
+tv_transmitall 1                  (Transmite la información de todos los jugadores sin importar dónde esté la cámara, vital para demos)
+
+|| Modos de Juego: Deathmatch y Carrera de Armamentos (mp_) ||
+mp_dm_kill_base_score 10          (Puntos base otorgados por conseguir una kill normal en Deathmatch)
+mp_dm_dogtag_score 1              (Puntos otorgados por recoger una chapa en el suelo en modo Deathmatch)
+mp_dm_teammates_are_enemies 1     (Activa el modo "Todos contra todos" (Free For All) en Deathmatch)
+mp_dm_bonus_length_min 30         (Duración mínima en segundos del arma bonus/extra en Deathmatch)
+mp_dm_bonus_length_max 30         (Duración máxima en segundos del arma bonus/extra en Deathmatch)
+mp_ggtr_bomb_defuse_bonus 1       (Otorga un bono de progresión de arma por desactivar la bomba en modo Demolición)
+mp_ggprogressive_round_restart_delay 15 (Tiempo en segundos de espera antes de reiniciar la ronda en Carrera de Armamentos)
+mp_weapons_allow_typecount 5      (Cantidad máxima de un mismo tipo de arma que un equipo puede comprar. Ej: Límite de 5 AWPs)
+mp_randomspawn 1                  (Hace que los jugadores reaparezcan en puntos aleatorios del mapa en lugar de las bases)
+mp_randomspawn_los 1              (Verifica la línea de visión para no reaparecer a alguien justo enfrente de un enemigo)
+
+|| Comandos de Binds y Sistema de Teclado Avanzado ||
+key_listboundkeys                 (Muestra en la consola una lista enorme con todas las teclas que tienen un bind asignado actualmente)
+unbind "tecla"                    (Elimina cualquier acción asignada a esa tecla. Ej: unbind "c")
+unbindall                         (PELIGRO. Elimina absolutamente todos los controles, te deja sin poder moverte. Solo usar para reiniciar de cero)
+bind_mac_os_ctrl "tecla"          (Comando técnico para configurar la tecla Control exclusivamente en usuarios de macOS)
+cl_buywheel_nonumberpurchasing 1  (Desactiva la compra usando los números del teclado al abrir el menú de compras circular)
+cl_radial_radio_tab_0_text_1 "#Chatwheel_requestplan" (Permite editar las opciones exactas que aparecen en la rueda de mensajes del juego)
+con_enable 1                      (Permite que la consola de desarrollador se pueda abrir, vital para cualquier jugador avanzado)
+
+|| Creadores de Mapas: Edición de Nav Mesh para Bots (Requiere sv_cheats 1) ||
+// Estos comandos son obligatorios para modders que quieran que los bots caminen por sus mapas custom.
+nav_edit 1                        (Activa el editor visual de la malla de navegación (Nav Mesh) con cuadrados en el suelo)
+nav_generate                      (El servidor escanea el mapa y autogenera una malla de navegación básica en las zonas caminables)
+nav_mark_walkable                 (Fuerza una marca de "zona transitable" donde estás mirando para corregir errores de los bots)
+nav_clear_walkable_marks          (Borra todas las marcas transitables puestas manualmente)
+nav_save                          (Guarda los cambios y crea el archivo .nav en la carpeta de mapas de tu disco duro)
+nav_delete                        (Borra el cuadrado de navegación que estás apuntando con la mira)
+nav_split                         (Divide el cuadrado de navegación seleccionado en dos mitades)
+nav_merge                         (Une dos cuadrados de navegación adyacentes en uno solo grande)
+nav_crouch                        (Asigna a la zona seleccionada la regla de que los bots deben pasar agachados sí o sí)
+nav_jump                          (Asigna a la zona seleccionada la regla de que los bots deben saltar para cruzarla)
+nav_dont_hide                     (Asigna a la zona seleccionada la regla de que los bots no deben usarla para esconderse o campear)
+nav_analyze                       (Recalcula el mapa completo tras editarlo para optimizar rutas, escondites y puntos de francotirador)
+nav_update_blocked                (Fuerza a los bots a recalcular su ruta si una puerta se cierra o un objeto bloquea el camino)
+nav_draw_limit 500                (Límite de cuadrados de navegación que se dibujan en pantalla al mismo tiempo para no saturar tu PC)
+
+|| Físicas de Entidades de Mapas y Servidor (Requiere sv_cheats 1) ||
+ent_fire !picker ignite           (Prende en llamas permanentemente al objeto, gallina o jugador que estés apuntando)
+ent_fire !picker color "255 0 0"  (Tiñe de color rojo absoluto al objeto o jugador que estés apuntando)
+ent_fire !self color "0 255 0"    (Te tiñe de color verde a ti mismo, visible para otros en tercera persona)
+phys_pushscale 1                  (Multiplicador de cuánta fuerza física se aplica a un barril u objeto al dispararle)
+sv_gravity 800                    (Fuerza de la gravedad global del servidor. 800 es por defecto, 200 simula gravedad lunar)
+sv_wateraccelerate 10             (Velocidad de aceleración y movimiento cuando el jugador está sumergido en agua)
+sv_waterfriction 1                (Fricción o resistencia del agua, afecta cuánto te frena nadar)
+=============================================================================
+|| PARTE 4 - ECONOMÍA DETALLADA, SONIDO PROFUNDO Y VISIBILIDAD (CS2)       ||
+=============================================================================
+
+|| Gestión de Economía y Dinero del Servidor (mp_ y cash_) ||
+mp_playercashawards 1             (Permite que los jugadores ganen dinero individualmente por hacer bajas o plantar)
+mp_teamcashawards 1               (Permite que los equipos ganen dinero grupalmente al ganar o perder rondas)
+mp_starting_losses 1              (Establece con cuántas rondas perdidas consecutivas empieza el bono de derrota. 1=Normal)
+cash_player_killed_enemy_default 300 (Dinero que recibe un jugador por matar a un enemigo con un rifle normal)
+cash_player_killed_enemy_headshot 300 (Dinero específico al matar por tiro a la cabeza, normalmente no da bono extra)
+cash_player_bomb_planted 300      (Dinero otorgado al jugador específico que logra plantar el C4)
+cash_player_bomb_defused 300      (Dinero otorgado al Antiterrorista específico que logra desactivar el C4)
+cash_team_terrorist_win_bomb 3500 (Dinero que recibe todo el equipo Terrorista por ganar mediante explosión del C4)
+cash_team_win_by_defusing_bomb 3500 (Dinero que recibe todo el equipo Antiterrorista por ganar desactivando el C4)
+cash_team_elimination_bomb_map 3250 (Dinero que recibe el equipo ganador por eliminar a todos los enemigos)
+cash_team_loser_bonus 1400        (Dinero inicial que recibe un equipo por perder su primera ronda)
+cash_team_loser_bonus_consecutive_rounds 500 (Dinero que se suma al bono de derrota por cada ronda perdida consecutiva)
+mp_weapons_allow_zeus 1           (Define cuántos Zeus x27 se pueden comprar o si están permitidos. 1=Sí)
+mp_equipment_reset_rounds 0       (En 1, borra todo el equipo y armas de los jugadores cada vez que inicia una ronda)
+mp_buy_anywhere 0                 (Si se pone en 1, permite abrir la tienda y comprar fuera de la base)
+mp_buy_during_immunity 0          (Permite comprar armas mientras el jugador tiene escudo de reaparición)
+
+|| Personalización de Sonido Profunda y Mezcla (snd_) ||
+snd_mute_mvp_music_live_players 1 (Mutea la música del MVP si aún hay jugadores vivos en ambos equipos. VITAL para escuchar pasos)
+snd_voipvolume 0.5                (Ajusta el volumen del chat de voz de los demás. Alternativa moderna a voice_scale)
+snd_menumusic_volume 0            (Controla el volumen de la música exclusiva del menú principal)
+snd_roundstart_volume 0           (Controla el volumen de la música que suena al inicio de cada ronda)
+snd_roundaction_volume 0          (Controla el volumen de la música de acción durante la ronda)
+snd_roundend_volume 0             (Controla el volumen de la música que suena cuando termina una ronda)
+snd_deathcamera_volume 0          (Controla el volumen de la música que suena al morir)
+snd_mapobjective_volume 0         (Controla el volumen de la música que suena cuando se planta el C4 o se toma un rehén)
+snd_tensecondwarning_volume 0.1   (Volumen de la música de los últimos 10 segundos del C4. Dejar en 0.1 para escucharla sin que moleste)
+snd_steamaudio_reverb_level_physics 1 (Activa el cálculo de reverberación física realista para cuando caen objetos o granadas)
+snd_ducktovolume 0.25             (Reduce el volumen general del juego al 25% automáticamente cuando tú o alguien habla por el micrófono)
+
+|| Accesibilidad, Visibilidad y Contraste de Modelos ||
+r_player_visibility_mode 1        (Activa el "Boost Player Contrast", ilumina ligeramente a los jugadores oscuros en zonas de sombra)
+cl_colorblind_alert 1             (Añade alertas visuales extra para ciertos elementos, pensado para jugadores con daltonismo)
+cl_teamid_overhead_mode 2         (Muestra una pequeña flecha y el equipamiento de tu compañero sobre su cabeza a través de las paredes)
+cl_teamid_overhead_colors_show 1  (Hace que la flecha sobre la cabeza de tu compañero sea de su color asignado en el radar)
+cl_show_equipped_character_for_player_avatars 1 (Muestra el agente/personaje equipado en lugar de la foto de Steam en ciertas pantallas)
+cl_inventory_saved_sort2 0        (Recuerda tu método preferido de ordenar el inventario en el menú principal)
+ui_setting_bounce_scale 1         (Controla la intensidad de las pequeñas animaciones al hacer clic en los botones del menú)
+
+|| Comandos de Espectador y Cámara de Muerte (spec_) ||
+spec_replay_autostart 0           (Desactiva la repetición automática de tu muerte / Killcam. Ahorra recursos y te manda directo a espectar)
+spec_show_xray 1                  (Activa el modo de visión a través de las paredes (Rayos X) cuando eres espectador de una partida o demo)
+spec_xray_dropped_defusers 1      (Muestra los kits de desactivación en el suelo con Rayos X mientras eres espectador)
+spec_xray_dropped_unoccluded 1    (Permite ver objetos tirados con Rayos X sin que se oscurezcan por la distancia)
+cl_obs_interp_enable 1            (Activa un movimiento de cámara suave al cambiar entre jugadores en el modo espectador)
+cl_obs_interp_pos_rate 0.27       (Velocidad del movimiento de cámara suave en el modo espectador)
+cl_spec_follow_grenade_key 1      (Permite dejar presionada la tecla ALT para que la cámara siga a la granada recién lanzada)
+
+|| Interfaz Avanzada Oculta y Comandos de Teclado (cl_ y bind) ||
+cl_crosshair_sniper_show_normal_inaccuracy 0 (Evita que la cruz del AWP/Scout se vuelva borrosa cuando te mueves sin usar la mira)
+cl_scoreboard_mouse_enable_binding "+attack2" (Fuerza a que el botón de clic derecho desbloquee el mouse al mantener pulsado el Tabulador)
+cl_draw_only_deathnotices 1       (Oculta TODO el HUD excepto el registro de muertes arriba a la derecha. Ideal para fragmovies/ediciones)
+hud_showtargetid 1                (Muestra el nombre del jugador en texto rojo/azul al ponerle la mira encima)
+cl_show_observer_crosshair 2      (0=Oculto, 1=Amigos, 2=Todos. Muestra la mira exacta de los jugadores a los que estás espectando)
+cl_silencer_mode 0                (0=No se puede quitar el silenciador. Evita quitarle accidentalmente el silenciador a la M4A1-S o USP-S por pánico)
+cl_playerspray_auto_apply 1       (Aplica tu grafiti instantáneamente al soltar la tecla sin abrir el menú circular)
+cl_teamcounter_playercount_instead_of_avatars 1 (Cambia las fotos de arriba por números simples para saber de un vistazo cuántos vivos quedan)
+
+|| Control de Daño y Comportamiento Específico de Armas (sv_ y mp_) ||
+mp_damage_headshot_only 1         (Activa el modo "Solo Headshots". Las balas en el cuerpo hacen 0 de daño)
+mp_damage_scale_t_head 1.0        (Multiplicador de daño por tiro a la cabeza en el equipo Terrorista)
+mp_damage_scale_ct_head 1.0       (Multiplicador de daño por tiro a la cabeza en el equipo Antiterrorista)
+mp_damage_scale_t_body 1.0        (Multiplicador de daño por tiro al cuerpo en el equipo Terrorista)
+mp_damage_scale_ct_body 1.0       (Multiplicador de daño por tiro al cuerpo en el equipo Antiterrorista)
+ff_damage_reduction_bullets 0.33  (Las balas a compañeros de equipo solo hacen el 33% del daño normal)
+ff_damage_reduction_grenade 0.85  (Las granadas a compañeros de equipo hacen el 85% de su daño normal)
+ff_damage_reduction_grenade_self 1.0 (Tus propias granadas te hacen el 100% del daño)
+ff_damage_reduction_other 0.4     (Daño de fuego amigo de cuchillos y fuego reducido al 40%)
+=============================================================================
+|| PARTE 5 - RENDIMIENTO A BAJO NIVEL, FÍSICAS Y PRÁCTICA AVANZADA (CS2)   ||
+=============================================================================
+
+|| Rendimiento del Motor (Source 2) y Optimización de Hardware ||
+engine_no_focus_sleep 0           (Evita que los FPS bajen a 20 cuando minimizas el juego o usas un segundo monitor. Vital para streamers)
+vblank_mode 0                     (Desactiva la sincronización vertical a nivel de motor. Ayuda a reducir el input lag al mínimo)
+fps_max_ui 120                    (Limita los FPS exclusivamente en los menús para que tu tarjeta gráfica no se sobrecaliente mientras buscas partida)
+cl_showfps 2                      (Comando antiguo pero útil: Muestra un contador de FPS que incluye gráficos de mínimos y máximos en tiempo real)
+cq_netgraph_problem_show_auto 1   (El gráfico de red de la esquina superior derecha solo aparecerá de forma automática si detecta problemas de conexión o lag)
+r_player_visibility_mode 1        (Mantiene activo el contraste de jugadores. Recomendado siempre en 1 para ver mejor a los enemigos en zonas oscuras)
+cl_allow_animated_avatars 0       (Desactiva las animaciones de los avatares de Steam. Previene micro-tirones al abrir la tabla de puntuaciones)
+cl_hide_avatar_images 1           (Reemplaza todas las fotos de perfil por imágenes genéricas, liberando memoria y evitando tirones)
+
+|| Entorno, Sangre y Visuales del Cliente ||
+cl_crosshair_recoil 1             (Mira dinámica de CS2: Hace que la mira principal siga físicamente el patrón de retroceso del arma al disparar)
+cl_debounce_zoom 1                (Evita hacer un doble zoom accidental con el AWP/Scout si mantienes presionado el clic derecho un milisegundo de más)
+violence_hblood 0                 (Comando clásico (si se habilita en tu región): Reduce o desactiva la cantidad de sangre generada al disparar)
+r_cleardecals                     (Limpia agujeros de bala y manchas de sangre. Nota: En CS2 requiere ciertos privilegios o servidores con cheats)
+r_drawtracers 0                   (Desactiva las líneas de luz de tus propias balas al disparar. Útil para no distraerte y enfocarte en tu mira)
+mat_queue_mode -1                 (Deja que el motor Source 2 detecte automáticamente cuántos núcleos de tu procesador usar para el renderizado)
+r_fullscreen_gamma 2.2            (Ajuste de gamma a pantalla completa. Bajar a 1.8 lo hace más brillante, subir a 2.5 más oscuro)
+
+|| Físicas de Impactos y Cajas de Colisión (Hitboxes) (Requiere sv_cheats 1) ||
+sv_showhitboxes 1                 (Dibuja las verdaderas cajas de colisión - hitboxes - de los modelos de los jugadores en 3D)
+sv_showbullethits 1               (Al disparar a un jugador, congela y dibuja su hitbox temporalmente para ver exactamente dónde dio la bala)
+cl_ent_absbox 1                   (Muestra el volumen absoluto que ocupa una entidad (barril, arma) en el espacio tridimensional del servidor)
+cl_ent_bbox 1                     (Dibuja las cajas delimitadoras (Bounding Boxes) de los objetos para ver sus límites de interacción)
+phys_timescale 1                  (Modifica la velocidad a la que ocurren las físicas en el servidor. Por defecto es 1)
+sv_showimpacts_time 4             (El tiempo exacto en segundos que los cuadrados rojos/azules de sv_showimpacts permanecen visibles en las paredes)
+sv_grenade_trajectory_time 10     (El tiempo en segundos que la trayectoria dibujada de una granada se queda flotando en el aire)
+
+|| Configuración Definitiva del Servidor de Práctica (mp_ y ammo_) ||
+sv_ignoregrenaderadio 1           (Silencia completamente el mensaje de radio automático "Fire in the hole" al lanzar granadas, evitando saturación)
+mp_t_default_primary weapon_ak47  (Todos los Terroristas inician la ronda con un AK-47 en las manos automáticamente)
+mp_ct_default_primary weapon_m4a1 (Todos los Antiterroristas inician la ronda con una M4A4 (o M4A1-S) en las manos)
+mp_t_default_grenades "weapon_smokegrenade weapon_flashbang weapon_hegrenade weapon_molotov" (Los T inician con todas las granadas en el inventario)
+mp_ct_default_grenades "weapon_smokegrenade weapon_flashbang weapon_hegrenade weapon_incgrenade" (Los CT inician con todas las granadas en el inventario)
+mp_defuser_allocation 2           (2 = Todos los CT comienzan la partida con un kit de desactivación equipado gratis)
+mp_free_armor 2                   (2 = Todos los jugadores de ambos equipos inician con Chaleco Kevlar y Casco gratis. 1 = Solo Kevlar)
+ammo_grenade_limit_flashbang 2    (Permite llevar estrictamente 2 granadas cegadoras, imitando las reglas de matchmaking oficial)
+ammo_grenade_limit_default 1      (Límite de cantidad por defecto para los demás tipos de granadas)
+ammo_grenade_limit_total 6        (Aumenta la cantidad máxima de granadas totales en el inventario, ideal para practicar sin restricciones)
+mp_respawn_on_death_ct 1          (Si mueres durante tu práctica como CT, reapareces al instante)
+mp_respawn_on_death_t 1           (Si mueres durante tu práctica como Terrorista, reapareces al instante)
+mp_solid_teammates 2              (Los compañeros de equipo son sólidos y te puedes subir a ellos, pero puedes caminar a través de ellos si corres)
+
+|| Misceláneos de Entrenamiento y Cámara ||
+cl_pitchup 90                     (Límite de ángulo para mirar hacia arriba. 90 grados es mirar al techo directamente)
+cl_pitchdown 90                   (Límite de ángulo para mirar hacia abajo. 90 grados es mirar a tus pies)
+cam_command 1                     (Comando base para habilitar movimientos y modificaciones de las perspectivas de cámara avanzadas)
+thirdperson_mayamode 1            (Activa un modo de control de cámara en tercera persona fijo, similar a los programas de animación 3D)
+cl_lock_camera 1                  (Bloquea la cámara del espectador en su posición actual para evitar moverla por error)
+fov_cs_debug 90                   (Permite cambiar el campo de visión (FOV) global del juego temporalmente para sacar capturas - Requiere sv_cheats 1)
+=============================================================================
+|| PARTE 6 - ALIASES, DEMOS AVANZADAS, BOTS Y TELEMETRÍA (CS2)             ||
+=============================================================================
+
+|| Creación de Aliases y Scripts de Binds (Automatización) ||
+alias "nombre_custom" "comando1"  (Crea un comando personalizado que ejecuta una acción. Ej: alias "desconectar" "disconnect")
+alias "comprar_awp" "buy awp; buy vesthelm; buy defuser" (Ejemplo de alias para comprar un set completo con un solo botón)
+bind "tecla" "comprar_awp"        (Asigna el alias creado anteriormente a una tecla específica)
+exec "autoexec.cfg"               (Ejecuta manualmente un archivo de configuración de texto con todos tus binds y aliases guardados)
+host_writeconfig                  (Obligatorio al final de tu archivo autoexec.cfg para asegurar que los cambios se guarden en el motor de CS2)
+bind "tecla" "toggle cl_righthand 0 1" (Comando clásico de CS:GO adaptado con 'toggle' para alternar entre dos valores con una sola tecla)
+bind "tecla" "sv_cheats 1; noclip" (Activa trucos y el modo fantasma al mismo tiempo. Ideal para servidores de práctica)
+
+|| Comportamiento Avanzado y Espejo de Bots (Requiere sv_cheats 1) ||
+bot_mimic 1                       (Hace que los bots imiten exactamente todos tus movimientos, saltos y disparos al mismo tiempo)
+bot_mimic_yaw_offset 180          (Ángulo en el que el bot te imita. 180 significa que te mirará de frente mientras hace lo que tú haces)
+bot_crouch 1                      (Obliga a todos los bots a permanecer agachados en todo momento)
+bot_stop 1                        (Congela a todos los bots en su posición actual sin importar lo que estén haciendo)
+bot_place                         (Teletransporta un bot exactamente a la posición donde estás apuntando con tu mira)
+bot_kick                          (Expulsa a todos los bots del servidor instantáneamente)
+bot_add_t                         (Añade un bot específicamente al equipo Terrorista)
+bot_add_ct                        (Añade un bot específicamente al equipo Antiterrorista)
+bot_dont_shoot 1                  (Los bots no dispararán bajo ninguna circunstancia, pero seguirán moviéndose)
+bot_zombie 1                      (Los bots se quedan completamente inactivos, ignorando objetivos, disparos y jugadores)
+
+|| Control de Demos, Análisis y Repeticiones (demo_) ||
+demo_gototick 15000               (Salta instantáneamente a un "tick" o momento específico de la demo que estás viendo)
+demo_info                         (Muestra información detallada en la consola sobre la demo actual, como los ticks totales y el mapa)
+demo_listimportantticks           (Imprime una lista de los momentos importantes detectados en la demo, como muertes o rondas ganadas)
+demo_flush 0                      (Forzar escritura en el disco. Útil para desarrolladores que graban demos de servidor en tiempo real)
+demo_index 1                      (Fuerza al juego a crear un índice al reproducir la demo, permitiendo adelantar y atrasar más rápido)
+playdemo "nombre_archivo"         (Reproduce una demo que esté guardada en la carpeta principal del juego)
+cl_drawhud_force_radar -1         (Oculta el radar cuando estás viendo una demo para limpiar la pantalla y grabar clips)
+spec_show_xray 1                  (Mantiene la visión de rayos X activada por defecto al reproducir demos o espectar)
+
+|| Telemetría Detallada y Diagnóstico de Red (CS2) ||
+cl_hud_telemetry_serverrecvmargin_graph_show 1 (Muestra un gráfico en pantalla sobre el margen de recepción del servidor)
+cl_hud_telemetry_net_misdelivery_show 2 (Muestra permanentemente el porcentaje de pérdida de paquetes o "Packet Loss" en el HUD)
+cl_hud_telemetry_ping_show 2      (Muestra permanentemente tu ping real hacia el servidor en la esquina superior derecha)
+cl_hud_telemetry_frametime_show 2 (Muestra permanentemente tu frametime y FPS actuales)
+net_status                        (Muestra en la consola un diagnóstico muy profundo del estado actual de tu conexión con los servidores de Valve)
+sys_info                          (Muestra la versión exacta del cliente de CS2, tu hardware detectado y drivers activos)
+
+|| Personalización Visual del Menú (ui_) ||
+ui_vanitysetting_loadoutslot_ct "rifle1" (Cambia el arma que sostiene tu personaje Antiterrorista en la pantalla del menú principal)
+ui_vanitysetting_loadoutslot_t "rifle0" (Cambia el arma que sostiene tu personaje Terrorista en el menú principal a su primer rifle)
+ui_setting_bounce_scale 0         (Quita la animación de "rebote" de los menús para hacer la interfaz un poco más estática)
+cl_promoted_settings_acknowledged 1 (Evita que el juego te muestre notificaciones de "Nuevos ajustes" en el menú de opciones)
+
+|| Otros Comandos Utilitarios y Misceláneos ||
+volume 0.5                        (Ajusta el volumen maestro general del juego. 1.0 es el máximo, 0 es silencio total)
+sensitivity 1.2                   (Ajusta la sensibilidad del mouse. Ideal para cambiarla rápidamente sin abrir el menú)
+zoom_sensitivity_ratio 1.0        (Modificador de la sensibilidad al estar usando la mira del AWP/Scout. 1.0 = igual que la sensibilidad normal)
+cl_drawhud 0                      (Desactiva absolutamente toda la interfaz gráfica. Requiere sv_cheats 1. Ideal para tomar fondos de pantalla limpios)
+kill                              (Suicida a tu personaje instantáneamente. Útil si te quedas atascado o en servidores de surf/kz)
+disconnect                        (Te desconecta instantáneamente del servidor actual y te devuelve al menú principal)
+quit                              (Cierra el juego por completo al instante sin confirmaciones)
+=============================================================================
+|| PARTE 7 - COMANDOS DE ACCESIBILIDAD, HUD PERSONALIZADO Y DEBUG DE MOTOR  ||
+=============================================================================
+
+|| Accesibilidad y Asistencia Visual (cl_) ||
+cl_hud_color 9                    (Cambia el color de los elementos del HUD a Aqua/Cian)
+cl_teamid_overhead_mode 3         (Muestra el nombre completo, salud y equipamiento de tus compañeros sobre sus cabezas)
+cl_teamid_overhead_fade_near_max_dist 0 (Evita que el indicador de tus compañeros desaparezca si te alejas mucho de ellos)
+cl_hud_radar_scale 1              (Escala del radar. 1 es el tamaño estándar, 1.3 lo hace más grande)
+cl_radar_always_centered 0        (El radar no te centra a ti, sino que muestra una porción más grande del mapa)
+cl_radar_rotate 1                 (El radar gira conforme hacia donde miras tú)
+cl_radar_scale 0.4                (Zoom del mapa en el radar. Valores bajos muestran más mapa, valores altos acercan más a tu posición)
+
+|| Comandos de Consola "Hidden" y Debug de Rendimiento ||
+con_filter_enable 1               (Permite filtrar mensajes en la consola)
+con_filter_text "damage"          (Hace que en la consola solo aparezcan mensajes que contengan la palabra "damage")
+con_filter_text_out " "           (Limpia o ignora el filtro anterior)
+developer 1                       (Activa el modo desarrollador: muestra los errores de scripting y carga de texturas directamente en la pantalla principal)
+log_color Console FF0000FF        (Cambia el color de la consola a rojo neón para mejor visibilidad)
+r_show_build_info 0               (Oculta la versión técnica de build en la esquina, útil para streamers)
+vconsole                          (Abre la consola de Source 2 en una ventana flotante separada; mucho más potente que la consola in-game)
+
+|| Manipulación de Entidades: Propiedades y Dinámica (sv_cheats 1) ||
+ent_create prop_physics_override model "models/props/de_dust/hr_dust/dust_files/dust_paper_01.mdl" (Genera un objeto físico específico)
+ent_teleport !picker              (Teletransporta el objeto que estás mirando a tu posición actual)
+ent_rotate 0 90 0                 (Gira el objeto que tienes seleccionado 90 grados en el eje Y)
+ent_setname "mi_objeto"           (Le pone un nombre a una entidad para poder referenciarla luego en scripts)
+ent_fire "mi_objeto" break        (Rompe o destruye la entidad con nombre "mi_objeto")
+ent_keyvalue "mi_objeto" health 500 (Cambia la propiedad de vida de una entidad, haciéndola más resistente a disparos)
+
+|| Comandos de "Networking" de Precisión (sv_ y cl_) ||
+sv_maxrate 786432                 (Velocidad máxima de bits que el servidor puede enviar al cliente)
+sv_minrate 196608                 (Velocidad mínima de bits que el servidor enviará al cliente)
+sv_minupdaterate 128              (Fuerza al servidor a enviar datos a una tasa mínima alta para asegurar fluidez)
+sv_maxupdaterate 128              (Límite máximo de actualizaciones de datos por segundo que el servidor puede enviar)
+cl_updaterate 128                 (Tasa de paquetes que solicitas al servidor por segundo)
+cl_cmdrate 128                    (Tasa de paquetes que envías al servidor por segundo)
+
+|| Automatización de Compras y Economía (Bind Scripts) ||
+bind "KP_INS" "buy vesthelm"      (Bind del teclado numérico: 0 = Kevlar + Casco)
+bind "KP_DEL" "buy defuser"       (Bind del teclado numérico: . = Kit de desactivación)
+bind "KP_ENTER" "buy ak47; buy m4a1" (Bind del teclado numérico: Enter = Compra el rifle principal según tu bando)
+bind "KP_1" "buy flashbang"       (Bind del teclado numérico: 1 = Flashbang)
+bind "KP_2" "buy smokegrenade"    (Bind del teclado numérico: 2 = Humo)
+bind "KP_3" "buy hegrenade"       (Bind del teclado numérico: 3 = Granada HE)
+
+|| Comandos de Sistema de Partida y Votaciones (sv_) ||
+sv_vote_issue_kick_allowed 1      (Permite votaciones para expulsar jugadores)
+sv_vote_issue_changelevel_allowed 1 (Permite votar para cambiar el mapa)
+sv_vote_kick_ban_duration 30      (Duración del baneo por votación: 30 minutos)
+sv_vote_quorum_ratio 0.6          (Porcentaje de votos necesarios para aprobar una votación (60%))
+
+|| Seguridad, Privacidad y "Binds" Especiales ||
+bind "v" "voice_chat_toggle"      (Comando lógico para activar/desactivar chat de voz de forma rápida)
+bind "n" "use weapon_c4; drop"    (Bind suicida para tirar la C4 al suelo inmediatamente con una tecla)
+cl_sanitize_player_names 1        (Oculta nombres de jugadores agresivos o inapropiados automáticamente)
+=============================================================================
+|| PARTE 8 - EL ARCHIVO MAESTRO: CÓMO CREAR TU AUTOEXEC.CFG (CS2)          ||
+=============================================================================
+
+|| Qué es y por qué lo necesitas ||
+El 'autoexec.cfg' es un archivo de texto plano que carga tus comandos personalizados 
+al abrir el juego. Evita tener que escribir todo en consola cada vez.
+
+|| Paso a Paso para la Instalación ||
+
+1.  UBICACIÓN: Ve a la carpeta de instalación de tu Counter-Strike 2.
+    Ruta típica: 
+    ...\Steam\steamapps\common\Counter-Strike Global Offensive\game\csgo\cfg\
+
+2.  CREACIÓN: 
+    *   Haz clic derecho en la carpeta 'cfg' > Nuevo > Documento de texto.
+    *   Ponle de nombre: autoexec.cfg (ASEGÚRATE de que la extensión sea .cfg y no .txt).
+
+3.  EDICIÓN: 
+    *   Ábrelo con el Bloc de notas o VS Code.
+    *   Copia tus comandos favoritos de las partes 1 a 7.
+    *   Asegúrate de que cada comando esté en una línea nueva.
+
+|| Estructura recomendada para tu autoexec.cfg ||
+
+// --- CONFIGURACIÓN DE RENDIMIENTO ---
+rate 786432
+cl_predict 1
+cl_interp 0
+cl_interp_ratio 1
+
+// --- MIRA Y HUD (Ejemplos) ---
+cl_crosshairsize 2
+cl_crosshairgap -3
+cl_crosshair_t 1
+hud_scaling 0.85
+
+// --- BINDS DE COMPRA (Ejemplos) ---
+bind "KP_1" "buy flashbang"
+bind "KP_2" "buy smokegrenade"
+bind "KP_3" "buy hegrenade"
+
+// --- COMANDOS DE PRÁCTICA (Solo activarlos cuando necesites) ---
+// alias "practica" "sv_cheats 1; sv_infinite_ammo 1; sv_grenade_trajectory_prac_pipreview 1; mp_roundtime 60"
+
+// --- OBLIGATORIO PARA GUARDAR ---
+host_writeconfig
+
+|| Cómo cargar el archivo manualmente ||
+Si el juego no lo lee automáticamente, abre la consola en el menú principal y escribe:
+exec autoexec.cfg
+
+|| Consejos ||
+*   Usa "//" para escribir comentarios en tu archivo. Así recordarás qué hace cada bloque.
+*   No pongas demasiados alias complejos si no los vas a usar; el motor Source 2 es 
+    rápido, pero un archivo gigante puede ser más difícil de depurar.
+*   Si notas que algo no funciona, revisa si el comando requiere `sv_cheats 1` 
+    (en ese caso, el archivo no lo aplicará en servidores oficiales).
+
