@@ -2,6 +2,9 @@
 Descripcion!!! Hola, Este es un proyecto en solitario que se especifica para gente nueva que no sabe sobre comandos de consola de cs2 u para creadores de mapas de cs2 nuevos, aqui esta una lista de 500+ comandos con sus utilidades al costado para su uso (EN ESPAÑOL), Gracias por visitar mi pagina web :P
 
 
+- ¡Gracias por visitar mi web!
+
+
 # 📋 Comandos para Counter-Strike 2 (CS2)
 
 **La guía más completa de comandos para CS2 en español**
@@ -38,11 +41,9 @@ Aquí encontrarás **más de 500 comandos** organizados, explicados y listos par
 
 ## 🚀 Configuración Rápida de Práctica
 
-Copia y pega este bloque en consola para tener el setup ideal:
+Copia y pega este bloque en consola para tener la base ideal :P
 
 ```console
 
 sv_cheats 1; mp_freezetime 0; mp_roundtime_defuse 60; mp_buytime 99999; mp_buy_anywhere 1; sv_infinite_ammo 1; bot_kick; mp_restartgame 1; sv_grenade_trajectory 1```
 
-
-¡Gracias por visitar mi Web!
