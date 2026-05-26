@@ -38,7 +38,7 @@ Aquí encontrarás **más de 500 comandos** organizados, explicados y listos par
 - Guía para crear tu propio `autoexec.cfg`
 
 ---
-- ¿Cómo activar la consola del desarrollador?
+## - ¿Cómo activar la consola del desarrollador?
 La consola es indispensable para aplicar comandos rápidamente dentro del juego.
 
 Abre Counter-Strike 2.
@@ -51,7 +51,7 @@ Busca la opción Activar consola de desarrollador (~) y cámbiala a SÍ.
 
 Ahora puedes abrir la consola en cualquier momento presionando la tecla ~ (o la tecla debajo de Esc). ((prefiero F9 jeje))
 
-- ¿Cómo instalar un archivo autoexec.cfg?
+## - ¿Cómo instalar un archivo autoexec.cfg?
 Un archivo autoexec se ejecuta automáticamente cada vez que inicias el juego, ahorrándote tener que escribir tus ajustes cada vez.
 
 Ubica la carpeta del juego:
