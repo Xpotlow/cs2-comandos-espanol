@@ -78,6 +78,7 @@ Verificación:
 
 Al abrir el juego, el autoexec debería cargarse solo. Si notas que no funciona, abre la consola en el juego y escribe: exec autoexec.cfg y presiona Enter.
 
+## Deje un .cfg (autoexecutable) con los comandos mas usados en cs2 :D
 ## 🚀 Configuración Rápida de Práctica
 
 Copia y pega este bloque en consola para tener la base ideal :P
